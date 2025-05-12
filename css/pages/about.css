@@ -1,0 +1,446 @@
+/* File: css/pages/about.css */
+
+/* Hero Section */
+.about-hero {
+    height: 60vh;
+    min-height: 400px;
+    background-image: url('../../assets/about-hero.png');
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-hero__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-hero__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Common Section Styles */
+.about-section,
+.about-values,
+.about-headquarters,
+.about-leadership,
+.about-brand,
+.about-contact {
+    padding: 5rem 2rem;
+}
+
+.about-section__container,
+.about-values__container,
+.about-headquarters__container,
+.about-leadership__container,
+.about-brand__container,
+.about-contact__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Section Titles */
+.about-section__title,
+.about-values__title,
+.about-headquarters__title,
+.about-leadership__title,
+.about-brand__title,
+.about-contact__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+/* History Section */
+.about-section {
+    background-color: #faf9f6;
+}
+
+.about-section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-section__text-container {
+    max-width: 600px;
+}
+
+.about-section__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.about-section__image-container {
+    overflow: hidden;
+    height: 100%;
+}
+
+.about-section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-section__image:hover {
+    transform: scale(1.03);
+}
+
+/* Values Section */
+.about-values {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.about-values__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-values__item {
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-values__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-values__icon {
+    margin-bottom: 1.5rem;
+}
+
+.about-values__item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.about-values__item-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Headquarters Section */
+.about-headquarters {
+    background-color: #faf9f6;
+}
+
+.about-headquarters__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-headquarters__image-container {
+    order: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.about-headquarters__content {
+    order: 2;
+}
+
+.about-headquarters__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-headquarters__image:hover {
+    transform: scale(1.03);
+}
+
+.about-headquarters__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+/* Leadership Section */
+.about-leadership {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.about-leadership__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.about-leadership__item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.about-leadership__item:hover {
+    transform: translateY(-5px);
+}
+
+.about-leadership__image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    border: 3px solid #d4af37;
+}
+
+.about-leadership__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-leadership__name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.about-leadership__role {
+    font-size: 1rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.about-leadership__bio {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Brand Identity Section */
+.about-brand {
+    background-color: #faf9f6;
+}
+
+.about-brand__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-brand__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.about-brand__logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-brand__logo {
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.about-brand__logo:hover {
+    transform: scale(1.05);
+}
+
+/* Contact CTA Section */
+.about-contact {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+}
+
+.about-contact__title {
+    color: #d4af37;
+}
+
+.about-contact__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    color: #ccc;
+}
+
+.about-contact__actions {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about-contact__button {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #000;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.about-contact__button:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-contact__button--secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #d4af37;
+}
+
+.about-contact__button--secondary:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .about-section__container,
+    .about-headquarters__container,
+    .about-brand__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-values__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-leadership__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section__image-container,
+    .about-headquarters__image-container,
+    .about-brand__logo-container {
+        margin: 2rem 0;
+    }
+
+    .about-headquarters__image-container {
+        order: 2;
+    }
+
+    .about-headquarters__content {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-hero__title {
+        font-size: 3rem;
+    }
+
+    .about-hero__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-section__title,
+    .about-values__title,
+    .about-headquarters__title,
+    .about-leadership__title,
+    .about-brand__title,
+    .about-contact__title {
+        font-size: 2rem;
+    }
+
+    .about-section,
+    .about-values,
+    .about-headquarters,
+    .about-leadership,
+    .about-brand,
+    .about-contact {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-contact__actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-contact__button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-hero__title {
+        font-size: 2.5rem;
+    }
+
+    .about-hero__subtitle {
+        font-size: 1rem;
+    }
+
+    .about-values__grid,
+    .about-leadership__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section__text,
+    .about-headquarters__text,
+    .about-brand__text {
+        font-size: 1rem;
+    }
+}
