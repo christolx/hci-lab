@@ -1,0 +1,213 @@
+/* Footer Styles */
+.footer {
+    background-color: rgba(15, 15, 15, 0.98);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    padding: 3rem 0 1.5rem;
+    margin-top: 4rem;
+}
+
+.footer__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+/* Brand Section */
+.footer__brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.3s ease;
+    position : relative;
+    padding-bottom : 10px;
+}
+
+.footer__brand-logo {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.footer__brand-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #d4af37;
+    text-transform: uppercase;
+}
+
+/* Contact Section */
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer__contact-address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    border-color: #d4af37;
+}
+
+.footer__social-link svg {
+    transition: transform 0.3s ease;
+}
+
+.footer__social-link:hover svg {
+    transform: scale(1.1);
+}
+
+/* Locations Section */
+.footer__locations {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__locations-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* Bottom Section */
+.footer__bottom {
+    max-width: 1400px;
+    margin: 2rem auto 0;
+    padding: 1.5rem 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 1.5rem 0 0.5rem;
+    }
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .footer__brand {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .footer__brand-logo {
+        height: 32px;
+        margin-right: 0.5rem;
+    }
+    .footer__brand-name {
+        font-size: 1.1rem;
+    }
+    .footer__contact,
+    .footer__locations {
+        text-align: center;
+        align-items: center;
+    }
+    .footer__contact-title {
+        font-size: 1.05rem;
+    }
+    .footer__contact-address,
+    .footer__locations-list {
+        font-size: 0.92rem;
+        margin-bottom: 1rem;
+    }
+    .footer__social {
+        justify-content: center;
+        gap: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .footer__social-link {
+        width: 36px;
+        height: 36px;
+    }
+    .footer__bottom {
+        padding: 1rem 1rem 0;
+        font-size: 0.93rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer__container {
+        padding: 0 0.5rem;
+        gap: 1rem;
+    }
+    .footer__brand {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
+    }
+    .footer__brand-logo {
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+        height: 28px;
+    }
+    .footer__brand-name {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .footer__contact-title {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .footer__contact-address,
+    .footer__locations-list {
+        font-size: 0.88rem;
+        margin-bottom: 0.7rem;
+    }
+    .footer__social {
+        gap: 0.5rem;
+    }
+    .footer__social-link {
+        width: 32px;
+        height: 32px;
+    }
+    .footer__bottom {
+        padding: 0.7rem 0.5rem 0;
+        font-size: 0.85rem;
+    }
+}
