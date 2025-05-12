@@ -504,4 +504,9 @@
         width: 100%;
         padding: 1rem;
     }
+
+    .testimonials__quote {
+        font-size : 1rem;
+    }
+
 }
