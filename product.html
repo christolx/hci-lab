@@ -1,0 +1,228 @@
+<!-- File: product.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Our Collection | Christian Wijaya Luxury Fashion</title>
+  <link rel="stylesheet" href="css/base/base.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/pages/product.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Refer to components/header.html-->
+<header id="main-header"></header>
+
+<main class="main-content">
+  <!-- Collection Banner -->
+  <section class="collection-banner">
+    <div class="collection-banner__container">
+      <h1 class="collection-banner__title">Our Collection</h1>
+      <p class="collection-banner__subtitle">Discover the epitome of luxury and craftsmanship</p>
+    </div>
+  </section>
+
+  <!-- Product Filters -->
+  <section class="filters">
+    <div class="filters__container">
+      <div class="filters__categories">
+        <button class="filters__category active" data-category="all">All Products</button>
+        <button class="filters__category" data-category="watches">Watches</button>
+        <button class="filters__category" data-category="accessories">Accessories</button>
+        <button class="filters__category" data-category="leather">Leather Goods</button>
+        <button class="filters__category" data-category="jewelry">Jewelry</button>
+      </div>
+      <div class="filters__sort">
+        <label for="sort-select" class="filters__sort-label">Sort by:</label>
+        <select id="sort-select" class="filters__sort-select">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A to Z</option>
+          <option value="name-desc">Name: Z to A</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="products">
+    <div class="products__container">
+      <div class="products__grid" id="products-grid">
+        <!-- Product items will be dynamically populated -->
+        <!-- Example product item structure -->
+        <article class="products__item" data-category="watches">
+          <div class="products__image-container">
+            <img src="assets/products/MidnightChrono.png" alt="Midnight Chrono Watch" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=1" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Midnight Chrono</h3>
+          <p class="products__category">Watches</p>
+          <p class="products__price">$12,500</p>
+        </article>
+
+        <article class="products__item" data-category="accessories">
+          <div class="products__image-container">
+            <img src="assets/products/RoyalCufflink.png" alt="Royal Cufflinks" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=2" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Royal Cufflinks</h3>
+          <p class="products__category">Accessories</p>
+          <p class="products__price">$3,850</p>
+        </article>
+
+        <article class="products__item" data-category="leather">
+          <div class="products__image-container">
+            <img src="assets/products/ExecutiveWallet.png" alt="Executive Wallet" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=3" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Executive Wallet</h3>
+          <p class="products__category">Leather Goods</p>
+          <p class="products__price">$1,200</p>
+        </article>
+
+        <article class="products__item" data-category="watches">
+          <div class="products__image-container">
+            <img src="assets/products/GoldenEra.png" alt="Golden Era Watch" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=4" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Golden Era</h3>
+          <p class="products__category">Watches</p>
+          <p class="products__price">$18,750</p>
+        </article>
+
+        <article class="products__item" data-category="jewelry">
+          <div class="products__image-container">
+            <img src="assets/products/DiamondNecklace.png" alt="Diamond Cascade Necklace" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=5" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Diamond Cascade Necklace</h3>
+          <p class="products__category">Jewelry</p>
+          <p class="products__price">$24,000</p>
+        </article>
+
+        <article class="products__item" data-category="leather">
+          <div class="products__image-container">
+            <img src="assets/products/BusinessBriefcase.png" alt="Business Briefcase" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=6" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Business Briefcase</h3>
+          <p class="products__category">Leather Goods</p>
+          <p class="products__price">$4,500</p>
+        </article>
+
+        <article class="products__item" data-category="accessories">
+          <div class="products__image-container">
+            <img src="assets/products/SilkTie.png" alt="Italian Silk Tie" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=7" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Italian Silk Tie</h3>
+          <p class="products__category">Accessories</p>
+          <p class="products__price">$450</p>
+        </article>
+
+        <article class="products__item" data-category="jewelry">
+          <div class="products__image-container">
+            <img src="assets/products/PlatinumRing.png" alt="Platinum Signet Ring" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=8" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Platinum Signet Ring</h3>
+          <p class="products__category">Jewelry</p>
+          <p class="products__price">$5,800</p>
+        </article>
+
+        <article class="products__item" data-category="watches">
+          <div class="products__image-container">
+            <img src="assets/products/ClassicTourbillon.png" alt="Classic Tourbillon" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=9" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Classic Tourbillon</h3>
+          <p class="products__category">Watches</p>
+          <p class="products__price">$32,000</p>
+        </article>
+
+        <article class="products__item" data-category="accessories">
+          <div class="products__image-container">
+            <img src="assets/products/LeatherBelt.png" alt="Alligator Leather Belt" class="products__image">
+            <div class="products__overlay">
+              <a href="product-detail.html?id=10" class="products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="products__name">Alligator Leather Belt</h3>
+          <p class="products__category">Accessories</p>
+          <p class="products__price">$1,850</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Video -->
+  <section class="brand-video">
+    <div class="brand-video__container">
+      <h2 class="brand-video__title">The Art of Craftsmanship</h2>
+      <p class="brand-video__description">Witness the meticulous process behind each Christian Wijaya creation</p>
+
+      <div class="brand-video__wrapper">
+        <video id="brand-trailer" class="brand-video__player" poster="assets/video-poster.jpg" controls>
+          <source src="assets/brand-trailer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="brand-video__play-btn" id="video-play-btn">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Consultation -->
+  <section class="consultation">
+    <div class="consultation__container">
+      <div class="consultation__content">
+        <h2 class="consultation__title">Personal Shopping Experience</h2>
+        <p class="consultation__text">
+          Our luxury consultants are available to provide personalized guidance and recommendations
+          tailored to your preferences. Schedule a private consultation at our boutique or online.
+        </p>
+        <a href="#" class="consultation__cta">Book a Consultation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!--Refer to components/footer.html-->
+<footer id="main-footer"></footer>
+
+<!--Utilizing JS DOM Manipulation to inject innerHTML.-->
+<script src="js/components/header.js"></script>
+<script src="js/components/footer.js"></script>
+<!--End-->
+<script src="js/pages/product.js"></script>
+</body>
+</html>
