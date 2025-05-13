@@ -1,10 +1,6 @@
-/* File: js/pages/home.js */
 document.addEventListener('DOMContentLoaded', function() {
-    // Testimonials Slider
     initTestimonialsSlider();
-    // Newsletter Form
     initNewsletterForm();
-    // Hero Zoom Out Animation
     setTimeout(function() {
         document.querySelector('.hero').classList.add('loaded');
     }, 100);
@@ -19,27 +15,22 @@ function initTestimonialsSlider() {
 
     let currentSlide = 0;
 
-    // Set initial slide as active
     slides[currentSlide].classList.add('active');
 
-    // Auto slide change
     let slideInterval = setInterval(nextSlide, 5000);
 
-    // Next slide function
     function nextSlide() {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }
 
-    // Previous slide function
     function prevSlide() {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         slides[currentSlide].classList.add('active');
     }
 
-    // Event listeners
     nextBtn.addEventListener('click', function() {
         clearInterval(slideInterval);
         nextSlide();
@@ -52,7 +43,6 @@ function initTestimonialsSlider() {
         slideInterval = setInterval(nextSlide, 5000);
     });
 
-    // Pause slider on hover
     const sliderContainer = document.getElementById('testimonials-slider');
     if (sliderContainer) {
         sliderContainer.addEventListener('mouseenter', function() {
@@ -77,16 +67,13 @@ function initNewsletterForm() {
         const emailInput = document.getElementById('newsletter-email');
         const email = emailInput.value.trim();
 
-        // Simple validation
         if (!isValidEmail(email)) {
             showMessage('Please enter a valid email address.', 'error');
             return;
         }
 
-        // Simulate form submission (would normally be an API call)
         showMessage('Subscribing...', '');
 
-        // Simulate successful submission after delay
         setTimeout(function() {
             showMessage('Thank you for subscribing to our newsletter!', 'success');
             form.reset();
@@ -96,14 +83,12 @@ function initNewsletterForm() {
     function showMessage(message, type) {
         messageEl.textContent = message;
         messageEl.className = 'newsletter__message';
-
         if (type) {
             messageEl.classList.add(type);
         }
     }
 
     function isValidEmail(email) {
-        // Basic email validation
         return email.includes('@') && email.includes('.');
     }
 }

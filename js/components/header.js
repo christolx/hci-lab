@@ -18,7 +18,7 @@ function initHeaderInteractions() {
             // Toggle .active class for animation and visibility
             mobileMenu.classList.toggle('active', !expanded);
 
-            // Toggle hidden attribute for a11y
+            // Toggle hidden attribute for accessibility
             if (!expanded) {
                 mobileMenu.hidden = false;
             } else {
