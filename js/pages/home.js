@@ -2,9 +2,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Testimonials Slider
     initTestimonialsSlider();
-
     // Newsletter Form
     initNewsletterForm();
+    // Hero Zoom Out Animation
+    setTimeout(function() {
+        document.querySelector('.hero').classList.add('loaded');
+    }, 100);
 });
 
 function initTestimonialsSlider() {
