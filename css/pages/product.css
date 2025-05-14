@@ -5,22 +5,25 @@
     padding: 8rem 2rem;
     text-align: center;
     position: relative;
+    background-image: url(../../assets/productsbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.collection-banner::after {
-    content: '';
+.collection-banner::before {
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background-color: #d4af37;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20, 15, 5, 0.6);
+    z-index: 1;
 }
 
 .collection-banner__container {
     max-width: 1400px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .collection-banner__title {
@@ -366,6 +369,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align : center;
 }
 
 .consultation__cta:hover {
