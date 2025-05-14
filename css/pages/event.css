@@ -260,7 +260,6 @@
 .model-registration__select,
 .model-registration__textarea {
     width: 100%;
-    padding: 0.8rem;
     border: 1px solid #ddd;
     background-color: #f9f9f9;
     font-family: 'Lora', serif;
