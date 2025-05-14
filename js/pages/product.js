@@ -112,3 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('load', animateOnScroll);
     window.addEventListener('scroll', animateOnScroll);
 });
+
+const consultButton = document.getElementsByClassName("consultation__cta");
+consultButton[0].addEventListener('click', () => {
+    alert("Successfully booked a consultation.");
+})

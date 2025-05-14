@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Details | Christian Wijaya Luxury Fashion</title>
+  <link rel="stylesheet" href="css/base/base.css">
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/pages/product-detail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Refer to components/header.html-->
+<header id="main-header"></header>
+
+<main class="main-content">
+  <div class="breadcrumb">
+    <div class="breadcrumb__container">
+      <a href="index.html" class="breadcrumb__link">Home</a>
+      <span class="breadcrumb__separator">/</span>
+      <a href="product.html" class="breadcrumb__link">Collection</a>
+      <span class="breadcrumb__separator">/</span>
+      <span class="breadcrumb__current" id="product-name">Product Name</span>
+    </div>
+  </div>
+
+  <section class="product-detail">
+    <div class="product-detail__container">
+      <div class="product-detail__gallery">
+        <div class="product-detail__main-image">
+          <img id="main-product-image" src="assets/products/MidnightChrono.png" alt="Product Image" class="product-detail__image">
+        </div>
+      </div>
+
+      <div class="product-detail__info">
+        <div class="product-detail__header">
+          <h1 class="product-detail__title" id="detail-product-name">Midnight Chrono</h1>
+          <p class="product-detail__category" id="detail-product-category">Watches</p>
+          <div class="product-detail__price-container">
+            <p class="product-detail__price" id="detail-product-price">$12,500</p>
+          </div>
+        </div>
+
+        <div class="product-detail__description">
+          <p id="detail-product-description">
+            The Midnight Chrono is the epitome of luxury timekeeping. Crafted with meticulous attention to detail, this exceptional timepiece features a 42mm 18K rose gold case, Swiss automatic movement with chronograph function, and a sapphire crystal case back revealing the intricate mechanism within. The deep midnight blue dial with luminous hands ensures perfect legibility in any lighting condition, while the hand-stitched alligator leather strap provides unparalleled comfort.
+          </p>
+        </div>
+
+        <div class="product-detail__features">
+          <h3 class="product-detail__features-title">Features</h3>
+          <ul class="product-detail__features-list">
+            <li class="product-detail__feature">42mm 18K rose gold case</li>
+            <li class="product-detail__feature">Swiss automatic movement</li>
+            <li class="product-detail__feature">Chronograph function</li>
+            <li class="product-detail__feature">Sapphire crystal case back</li>
+            <li class="product-detail__feature">Water resistant to 100 meters</li>
+            <li class="product-detail__feature">Hand-stitched alligator leather strap</li>
+          </ul>
+        </div>
+
+        <div class="product-detail__purchase">
+          <div class="product-detail__quantity">
+            <label for="quantity" class="product-detail__quantity-label">Quantity</label>
+            <div class="product-detail__quantity-controls">
+              <button class="product-detail__quantity-btn" id="decrease-quantity">-</button>
+              <input type="number" id="quantity" class="product-detail__quantity-input" value="1" min="1" max="10">
+              <button class="product-detail__quantity-btn" id="increase-quantity">+</button>
+            </div>
+            <p class="product-detail__quantity-error" id="quantity-error"></p>
+          </div>
+
+          <div class="product-detail__actions">
+            <button class="product-detail__add-to-cart" id="add-to-cart-btn">Add to Cart</button>
+            <button class="product-detail__order-now" id="order-now-btn">Order Now</button>
+          </div>
+        </div>
+
+        <div class="product-detail__additional">
+          <div class="product-detail__accordion">
+            <div class="product-detail__accordion-item">
+              <button class="product-detail__accordion-header">
+                <span>Shipping & Returns</span>
+                <svg class="product-detail__accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="product-detail__accordion-content">
+                <p>
+                  We offer complimentary shipping on all orders. Each timepiece is carefully packaged in our signature box and delivered via secure courier service. Delivery typically takes 2-5 business days, depending on your location. If you're not completely satisfied with your purchase, you may return it within 30 days for a full refund or exchange.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-detail__accordion-item">
+              <button class="product-detail__accordion-header">
+                <span>Warranty</span>
+                <svg class="product-detail__accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="product-detail__accordion-content">
+                <p>
+                  Every Christian Wijaya timepiece comes with our exclusive 5-year international warranty, covering manufacturing defects and mechanical failures. Our dedicated customer service team is available to assist with any inquiries or service requirements. For maintenance, we recommend having your timepiece serviced every 3-5 years to ensure optimal performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-products">
+    <div class="related-products__container">
+      <h2 class="related-products__title">You May Also Like</h2>
+      <div class="related-products__grid">
+        <article class="related-products__item">
+          <div class="related-products__image-container">
+            <img src="assets/GoldenEra.jpg" alt="Golden Era Watch" class="related-products__image">
+            <div class="related-products__overlay">
+              <a href="product-detail.html?id=4" class="related-products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="related-products__name">Golden Era</h3>
+          <p class="related-products__price">$18,750</p>
+        </article>
+
+        <article class="related-products__item">
+          <div class="related-products__image-container">
+            <img src="assets/tourbillon.webp" alt="Classic Tourbillon" class="related-products__image">
+            <div class="related-products__overlay">
+              <a href="product-detail.html?id=9" class="related-products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="related-products__name">Classic Tourbillon</h3>
+          <p class="related-products__price">$32,000</p>
+        </article>
+
+        <article class="related-products__item">
+          <div class="related-products__image-container">
+            <img src="assets/products/RoyalCufflink.png" alt="Royal Cufflinks" class="related-products__image">
+            <div class="related-products__overlay">
+              <a href="product-detail.html?id=2" class="related-products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="related-products__name">Royal Cufflinks</h3>
+          <p class="related-products__price">$3,850</p>
+        </article>
+
+        <article class="related-products__item">
+          <div class="related-products__image-container">
+            <img src="assets/DiamondNecklace.webp" alt="Diamond Cascade Necklace" class="related-products__image">
+            <div class="related-products__overlay">
+              <a href="product-detail.html?id=5" class="related-products__view">View Details</a>
+            </div>
+          </div>
+          <h3 class="related-products__name">Diamond Cascade Necklace</h3>
+          <p class="related-products__price">$24,000</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="product-detail__notification" id="cart-notification">
+    <div class="product-detail__notification-content">
+      <svg class="product-detail__notification-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <p class="product-detail__notification-text">Item added to cart</p>
+    </div>
+  </div>
+</main>
+
+<!--Refer to components/footer.html-->
+<footer id="main-footer"></footer>
+
+<!--Utilizing JS DOM Manipulation to inject innerHTML.-->
+<script src="js/components/header.js"></script>
+<script src="js/components/footer.js"></script>
+<!--End-->
+<script src="js/pages/product-detail.js"></script>
+</body>
+</html>

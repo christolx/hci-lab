@@ -302,10 +302,6 @@
 /* Consultation Section */
 .consultation {
     padding: 6rem 2rem;
-    background-image: url('../../assets/consultation-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     position: relative;
     color: #fff;
 }
